@@ -2,7 +2,7 @@
 # This section is for configuring data fetching routines.
 fetchers:
     search_parameters:
-        enabled: False
+        enabled: false
         duration:
             # Duration is computed as c0 + c1 * magnitude, in minutes.
             c0: 4.5
@@ -26,7 +26,7 @@ fetchers:
             # the dynamic_search_parameters.py module for further details. 
     KNETFetcher:
         # Enable this fetcher?
-        enabled: True
+        enabled: false
         # NIED requires a username and a password, obtain these by
         # visiting this page:
         # https://hinetwww11.bosai.go.jp/nied/registration/
@@ -45,7 +45,7 @@ fetchers:
         restrict_stations: false
     CESMDFetcher:
         # Enable this fetcher?
-        enabled: True
+        enabled: False
         # CESMD requires an email, register yours by
         # visiting this page:
         # https://strongmotioncenter.org/cgi-bin/CESMD/register.pl
@@ -60,7 +60,7 @@ fetchers:
         station_radius: 100.0
     FDSNFetcher:
         # Enable this fetcher?
-        enabled: True
+        enabled: false
         # The domain section is for defining the search domain.
         domain:
             # Two domain types of supported: circular, rectangular
@@ -741,5 +741,5 @@ error_notification:
     from_address: None
     to_addresses: None
 strec:
-    enabled: True
+    enabled: false
 version: 2
