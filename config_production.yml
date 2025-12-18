@@ -2,7 +2,7 @@
 # This section is for configuring data fetching routines.
 fetchers:
     search_parameters:
-        enabled: True
+        enabled: False
         duration:
             # Duration is computed as c0 + c1 * magnitude, in minutes.
             c0: 4.5
